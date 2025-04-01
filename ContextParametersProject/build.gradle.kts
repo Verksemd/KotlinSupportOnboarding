@@ -1,5 +1,6 @@
 plugins {
-  //kotlin("jvm") version "2.1.10"
+//  kotlin("jvm") version "2.1.10"
+//  kotlin("jvm") version "2.1.20-Beta2"
   kotlin("jvm") version "2.2.0-dev-6560" // 21.02.25
 
 }
@@ -22,5 +23,6 @@ tasks.test {
 kotlin {
   jvmToolchain(21)
 
-  compilerOptions.freeCompilerArgs.add("-Xcontext-parameters")
+//  compilerOptions.freeCompilerArgs.add("-Xcontext-parameters")
+  compilerOptions.freeCompilerArgs.add("-Xcontext-receivers")
 }
